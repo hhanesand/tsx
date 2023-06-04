@@ -34,14 +34,14 @@
 		"build": "pkgroll --target=node18",
 		"lint": "eslint --cache .",
 		"type-check": "tsc --noEmit",
-		"test": "pnpm build && node ./dist/cli.js tests/index.ts",
-		"prepack": "pnpm build && clean-pkg-json"
+		"test": "npm build && node ./dist/cli.js tests/index.ts",
+		"prepack": "npm build && clean-pkg-json"
 	},
 	"simple-git-hooks": {
-		"pre-commit": "pnpm lint-staged"
+		"pre-commit": "npm lint-staged"
 	},
 	"lint-staged": {
-		"*.{js,ts,mjs,mts,cjs,cts,json}": "pnpm lint"
+		"*.{js,ts,mjs,mts,cjs,cts,json}": "npm lint"
 	},
 	"dependencies": {
 		"@esbuild-kit/cjs-loader": "^2.4.2",
