@@ -31,7 +31,6 @@
 	},
 	"bin": "./dist/cli.js",
 	"scripts": {
-		"prepare": "pnpm simple-git-hooks",
 		"build": "pkgroll --target=node18",
 		"lint": "eslint --cache .",
 		"type-check": "tsc --noEmit",
